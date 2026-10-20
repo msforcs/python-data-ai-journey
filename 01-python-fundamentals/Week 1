@@ -2,7 +2,12 @@ Part 1 — Reviewing your Python exercises
 Exercise 1: Personal information
 Logic correct
 You wrote:
-name = "alex"age = 25country = "uk"print(name)print(age)print(country)
+name = "alex"
+age = 25
+country = "uk"
+print(name)
+print(age)
+print(country)
 
 
 
@@ -13,8 +18,7 @@ You successfully used:
 - An integer for age.
 - print() to display values.
 To match the requested output format, you could improve it using:
-print("Name:", name)print("Age:", age)print("Country:", country)
-
+print("Name:", name) print("Age:", age) print("Country:", country)
 
 
 This produces:
@@ -26,14 +30,19 @@ Country: uk
 Exercise 2: Salary calculator
 Monthly calculation correct
 Your solution:
-income = 2800expenses = 1650savings = income - expenses
+income = 2800 expenses = 1650 savings = income - expenses
 
 
 
 The calculation is correct, but you haven't yet calculated annual savings or printed the results.
 
 Here's the completed version:
-income = 2800expenses = 1650monthly_savings = income - expensesannual_savings = monthly_savings * 12print("Monthly savings:", monthly_savings)print("Annual savings:", annual_savings)
+income = 2800 expenses = 1650 
+monthly_savings = income - expenses
+annual_savings = monthly_savings * 12
+
+print("Monthly savings:", monthly_savings)
+print("Annual savings:", annual_savings)
 
 
 
