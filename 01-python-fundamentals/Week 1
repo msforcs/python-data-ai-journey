@@ -74,7 +74,103 @@ Average daily sales
 Sales by day
 Your first example of visualising a dataset.
 
-
 This is an early example of data analysis: calculate a total, calculate an average, and compare the observations.
 
 Your next challenge: Can you modify your Exercise 3 code to calculate the difference between Thursday's sales and Wednesday's sales?
+
+
+
+
+
+
+
+
+
+
+Part G — Your first mini-project
+Project 1: Monthly Budget Analyser
+
+Build a Python program that stores monthly income, rent, food, transport, and entertainment costs, then calculates:
+- Total monthly expenses
+- Money remaining after expenses
+- Percentage of income saved
+Starter code:
+income = 3200 rent = 1100 food = 350 transport = 180 entertainment = 120
+# Your task:# 1. Calculate total expenses # 2. Calculate savings # 3. Calculate savings percentage # 4. Print all three results
+
+
+
+Hint: Savings percentage = savings / income * 100. Assume income is greater than zero.
+
+income = 3200
+rent = 1100
+food = 350
+transport = 180 
+entertainment_costs = 120
+
+monthly_expenses = rent + food + transport + entertainment_costs
+annual_expenses = monthly_expenses * 12
+savings = income - monthly_expenses 
+savings_percentage = savings / income * 100 
+
+
+print("Monthly_expenses:", monthly expenses)
+print("Savings:", savings)
+print("Savings percentage:", savings percentage)
+
+Monthly Budget Analyser
+Your code review
+Almost correct
+
+Calculation logic
+Correct
+
+Python syntax
+2 errors
+
+
+
+Your calculations are all correct:
+monthly_expenses = rent + food + transport + entertainment_costsannual_expenses = monthly_expenses * 12savings = income - monthly_expensessavings_percentage = savings / income * 100
+
+
+
+You've even added annual_expenses, which wasn't required. That's a useful extension.
+The two mistakes
+You wrote:
+print("Monthly_expenses:", monthly expenses)print("Savings percentage:", savings percentage)
+
+
+
+Python does not allow spaces in variable names. You defined monthly_expenses and savings_percentage, so you must use those exact names.
+Corrected code
+income = 3200rent = 1100food = 350transport = 180entertainment_costs = 120
+
+monthly_expenses = rent + food + transport + entertainment_costs
+annual_expenses = monthly_expenses * 12
+savings = income - monthly_expenses
+savings_percentage = savings / income * 100
+print("Monthly expenses:", monthly_expenses)
+print("Annual expenses:", annual_expenses)
+print("Savings:", savings)
+print("Savings percentage:", savings_percentage)
+
+
+
+Your expected output:
+MONTHLY BUDGET RESULTS
+Monthly expenses
+£1,750
+
+Annual expenses
+£21,000
+
+Monthly savings
+£1,450
+
+Savings rate
+45.31%
+
+
+
+Your program prints the unrounded savings percentage, 45.3125. Later, I'll show you how to format it as 45.31%.
